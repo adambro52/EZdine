@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="66dp"
+        android:layout_height="46dp"
+        android:text="Add"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <Button
+        android:id="@+id/Profile"
+        android:layout_width="66dp"
+        android:layout_height="46dp"
+        android:text="Profile"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="363dp"
+        android:layout_height="45dp"
+        android:lineSpacingExtra="24sp"
+        android:text="   Welcome to Random Restaurant !"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/mascot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="250dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/fav"
+        android:layout_width="66dp"
+        android:layout_height="46dp"
+        android:text="Fav"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <SearchView
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+</android.support.constraint.ConstraintLayout>
