@@ -1,0 +1,105 @@
+@startuml
+
+title 5115 app planning
+
+class HomePage{
+    +search_bar_text
+    +favorite_restaurants
+    +personal_profile
+}
+
+class SearchDropDown{
+    +tag_thai
+    +restaurants
+    -enter_query
+    +back
+}
+
+class SearchDropDownTag{
+    +restaurants
+    +enter_query
+    +back
+}
+
+class SearchResults{
+    -choose_for_me!
+    +restaurants
+    +back
+}
+
+class Restaurant{
+    +add_reviews
+    +reviews
+    +menu
+    +back
+}
+
+class Menu{
+    +back
+}
+
+class FavoriteRestaurants{
+    +restaurants
+    +back
+}
+
+class Profile{
+    +reviews
+    +restaurants
+    +friends
+    -find_friends
+    +back
+}
+
+class FriendPage{
+    -back
+}
+
+class Reviews{
+    -back
+}
+
+class AddReviews{
+    -save
+    -back
+}
+
+SearchDropDown --down--* SearchResults: restaurants
+SearchDropDown --down--* SearchDropDownTag: tag_thai
+SearchDropDown --down--* Restaurant: restaurants
+SearchDropDown --down--* HomePage: back
+
+SearchDropDownTag --up--* SearchResults: enter_query
+SearchDropDownTag --down--* Restaurant: restaurants
+
+SearchResults --down--* SearchDropDown: back
+SearchResults --down--* Restaurant: restaurants
+
+HomePage --up--* SearchDropDown: search_bar_text
+HomePage --right--* FavoriteRestaurants: favorite_restaurants
+HomePage --right--* Profile: personal_profile
+
+FavoriteRestaurants --right--* Restaurant: restaurants
+FavoriteRestaurants --left--* HomePage: back
+
+Profile --right--* Restaurant: restaurants
+Profile --right--* HomePage: back
+Profile --left--* FriendPage: friends
+Profile --right--* Reviews: reviews
+
+Restaurant --right--* Menu: menu
+Restaurant --left--* HomePage: back
+Restaurant --up--* AddReviews: add_reviews
+Restaurant --up--* Reviews: reviews
+
+AddReviews --up--* Reviews: save
+AddReviews --down--* Restaurant: back
+
+Reviews --down--* Restaurant: back
+
+Menu --left--* Restaurant: back
+
+
+@enduml
+
+
