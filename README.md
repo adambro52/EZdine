@@ -1,0 +1,2 @@
+# EZdine
+Restaurant app
