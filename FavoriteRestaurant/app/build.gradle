@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.restaurant"
+        applicationId "com.example.favoriterestaurant"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -27,6 +26,3 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
-=======
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
->>>>>>> jack
