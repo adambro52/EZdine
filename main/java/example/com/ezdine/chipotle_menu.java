@@ -12,22 +12,6 @@ public class chipotle_menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chipotle_menu);
-
-        Button butt12 = findViewById(R.id.button12);
-        butt12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openChipotle();
-            }
-        });
-
-        Button butt10 = findViewById(R.id.button10);
-        butt10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHome();
-            }
-        });
     }
 
     public void openHome() {
