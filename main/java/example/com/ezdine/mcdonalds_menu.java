@@ -19,7 +19,7 @@ public class mcdonalds_menu extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openChipotle() {
+    public void openMcdonalds() {
         Intent intent = new Intent(this, mcdonalds_page.class);
         startActivity(intent);
     }
